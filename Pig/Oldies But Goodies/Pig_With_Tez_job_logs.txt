@@ -1,0 +1,475 @@
+WARNING: Use "yarn jar" to launch YARN applications.
+17/12/30 00:43:42 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+17/12/30 00:43:42 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+17/12/30 00:43:42 INFO pig.ExecTypeProvider: Trying ExecType : TEZ_LOCAL
+17/12/30 00:43:42 INFO pig.ExecTypeProvider: Trying ExecType : TEZ
+17/12/30 00:43:42 INFO pig.ExecTypeProvider: Picked TEZ as the ExecType
+2017-12-30 00:43:42,270 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0.2.5.0.0-1245 (rexported) compiled Aug 26 2016, 02:07:35
+2017-12-30 00:43:42,270 [main] INFO  org.apache.pig.Main - Logging error messages to: /hadoop/yarn/local/usercache/maria_dev/appcache/application_1514593740388_0008/container_1514593740388_0008_01_000002/pig_1514594622269.log
+2017-12-30 00:43:42,997 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/yarn/.pigbootup not found
+2017-12-30 00:43:43,123 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://sandbox.hortonworks.com:8020
+2017-12-30 00:43:43,651 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: PIG-script.pig-bbbf889a-9da3-46e1-86cf-3f9ccb49387f
+2017-12-30 00:43:44,142 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://sandbox.hortonworks.com:8188/ws/v1/timeline/
+2017-12-30 00:43:44,322 [main] INFO  org.apache.pig.backend.hadoop.PigATSClient - Created ATS Hook
+2017-12-30 00:43:45,466 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: HASH_JOIN,GROUP_BY,ORDER_BY,FILTER
+2017-12-30 00:43:45,522 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2017-12-30 00:43:45,564 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2017-12-30 00:43:45,604 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for metadata: $3, $4
+2017-12-30 00:43:45,694 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (PS Old Gen) of size 175112192 to monitor. collectionUsageThreshold = 122578536, usageThreshold = 122578536
+2017-12-30 00:43:45,829 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher - Tez staging directory is /tmp/yarn/staging and resources directory is /tmp/temp416559944
+2017-12-30 00:43:45,877 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.plan.TezCompiler - File concatenation threshold: 100 optimistic? false
+2017-12-30 00:43:45,937 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.CombinerOptimizerUtil - Choosing to move algebraic foreach to combiner
+2017-12-30 00:43:45,954 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.plan.optimizer.SecondaryKeyOptimizerTez - Using Secondary Key Optimization in the edge between vertex - scope-60 and vertex - scope-69
+2017-12-30 00:43:46,036 [main] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2017-12-30 00:43:46,048 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-12-30 00:43:46,048 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2017-12-30 00:43:46,103 [main] INFO  com.hadoop.compression.lzo.GPLNativeCodeLoader - Loaded native gpl library
+2017-12-30 00:43:46,105 [main] INFO  com.hadoop.compression.lzo.LzoCodec - Successfully loaded & initialized native-lzo library [hadoop-lzo rev 7a4b57bedce694048432dd5bf5b90a6c8ccdba80]
+2017-12-30 00:43:46,120 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2017-12-30 00:43:46,162 [main] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2017-12-30 00:43:46,167 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-12-30 00:43:46,167 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2017-12-30 00:43:46,171 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2017-12-30 00:43:47,184 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: pig-0.16.0.2.5.0.0-1245-core-h2.jar
+2017-12-30 00:43:47,184 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: antlr-runtime-3.4.jar
+2017-12-30 00:43:47,184 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: joda-time-2.8.1.jar
+2017-12-30 00:43:47,184 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Local resource: automaton-1.11-8.jar
+2017-12-30 00:43:47,415 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-57: parallelism=1, memory=256, java opts=-Xmx256m
+2017-12-30 00:43:47,415 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: avgRatings,ratings,ratingsByMovie
+2017-12-30 00:43:47,415 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: ratings[3,10],ratings[-1,-1],avgRatings[16,13],ratingsByMovie[14,17]
+2017-12-30 00:43:47,415 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: 
+2017-12-30 00:43:47,495 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Set auto parallelism for vertex scope-58
+2017-12-30 00:43:47,496 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-58: parallelism=1, memory=256, java opts=-Xmx256m
+2017-12-30 00:43:47,496 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: avgRatings,fiveStarMovies,fiveStarsWithData
+2017-12-30 00:43:47,496 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: avgRatings[16,13],fiveStarMovies[18,17],fiveStarsWithData[20,20]
+2017-12-30 00:43:47,496 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: GROUP_BY
+2017-12-30 00:43:47,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-59: parallelism=1, memory=256, java opts=-Xmx256m
+2017-12-30 00:43:47,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: fiveStarsWithData,metadata,nameLookup
+2017-12-30 00:43:47,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: metadata[7,11],nameLookup[-1,-1],fiveStarsWithData[20,20]
+2017-12-30 00:43:47,567 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: 
+2017-12-30 00:43:47,605 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Set auto parallelism for vertex scope-60
+2017-12-30 00:43:47,605 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-60: parallelism=2, memory=256, java opts=-Xmx256m
+2017-12-30 00:43:47,605 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: fiveStarsWithData,oldestFiveStarMovies
+2017-12-30 00:43:47,605 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: fiveStarsWithData[20,20],oldestFiveStarMovies[22,23]
+2017-12-30 00:43:47,605 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: HASH_JOIN,SAMPLER
+2017-12-30 00:43:47,632 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Estimate quantile for sample aggregation vertex scope-69
+2017-12-30 00:43:47,639 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-69: parallelism=1, memory=256, java opts=-Xmx256m
+2017-12-30 00:43:47,639 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: 
+2017-12-30 00:43:47,639 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: 
+2017-12-30 00:43:47,639 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: 
+2017-12-30 00:43:47,662 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-79: parallelism=-1, memory=256, java opts=-Xmx256m
+2017-12-30 00:43:47,662 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: oldestFiveStarMovies
+2017-12-30 00:43:47,663 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: oldestFiveStarMovies[22,23]
+2017-12-30 00:43:47,663 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: 
+2017-12-30 00:43:47,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Set VertexManagerPlugin to PartitionerDefinedParallelismVertexManager for vertex scope-81
+2017-12-30 00:43:47,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - For vertex - scope-81: parallelism=-1, memory=256, java opts=-Xmx256m
+2017-12-30 00:43:47,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Processing aliases: 
+2017-12-30 00:43:47,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Detailed locations: 
+2017-12-30 00:43:47,697 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezDagBuilder - Pig features in the vertex: ORDER_BY
+2017-12-30 00:43:47,735 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJobCompiler - Total estimated parallelism is 10
+2017-12-30 00:43:47,839 [PigTezLauncher-0] INFO  org.apache.pig.tools.pigstats.tez.TezScriptState - Pig script settings are added to the job
+2017-12-30 00:43:47,841 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezSessionManager - Increasing tez.am.resource.memory.mb from 256 to 1024 as total estimated tasks = 10, total vertices = 7, max outputs = 2
+2017-12-30 00:43:47,841 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezSessionManager - Increasing Tez AM Heap Size from 0M to 512M as total estimated tasks = 10, total vertices = 7, max outputs = 2
+2017-12-30 00:43:47,841 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezSessionManager - Value of tez.am.launch.cmd-opts is now -XX:+PrintGCDetails -verbose:gc -XX:+PrintGCTimeStamps -XX:+UseNUMA -XX:+UseParallelGC -Xmx512M
+2017-12-30 00:43:47,877 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Tez Client Version: [ component=tez-api, version=0.7.0.2.5.0.0-1245, revision=c98dc048175afd3f56a44f05a1c18c6813f0b9a4, SCM-URL=scm:git:https://git-wip-us.apache.org/repos/asf/tez.git, buildTime=2016-08-26T01:23:50Z ]
+2017-12-30 00:43:48,025 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://sandbox.hortonworks.com:8188/ws/v1/timeline/
+2017-12-30 00:43:48,037 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at sandbox.hortonworks.com/172.17.0.2:8050
+2017-12-30 00:43:48,219 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at sandbox.hortonworks.com/172.17.0.2:10200
+2017-12-30 00:43:48,244 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Using org.apache.tez.dag.history.ats.acls.ATSV15HistoryACLPolicyManager to manage Timeline ACLs
+2017-12-30 00:43:48,339 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://sandbox.hortonworks.com:8188/ws/v1/timeline/
+2017-12-30 00:43:48,349 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Session mode. Starting session.
+2017-12-30 00:43:48,354 [PigTezLauncher-0] INFO  org.apache.tez.common.security.TokenCache - Merging additional tokens from binary file, binaryFileName=/hadoop/yarn/local/usercache/maria_dev/appcache/application_1514593740388_0008/container_1514593740388_0008_01_000002/container_tokens
+2017-12-30 00:43:48,355 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClientUtils - Using tez.lib.uris value from configuration: /hdp/apps/2.5.0.0-1245/tez/tez.tar.gz
+2017-12-30 00:43:48,418 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Stage directory /tmp/yarn/staging doesn't exist and is created
+2017-12-30 00:43:48,436 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Tez system stage directory hdfs://sandbox.hortonworks.com:8020/tmp/yarn/staging/.tez/application_1514593740388_0009 doesn't exist and is created
+2017-12-30 00:43:48,474 [PigTezLauncher-0] INFO  org.apache.tez.dag.history.ats.acls.ATSV15HistoryACLPolicyManager - Created Timeline Domain for History ACLs, domainId=Tez_ATS_application_1514593740388_0009
+2017-12-30 00:43:49,060 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1514593740388_0009
+2017-12-30 00:43:49,065 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - The url to track the Tez Session: http://sandbox.hortonworks.com:8088/proxy/application_1514593740388_0009/
+2017-12-30 00:43:54,365 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - Submitting DAG PigLatin:script.pig-0_scope-0
+2017-12-30 00:43:54,365 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Submitting dag to TezSession, sessionName=PigLatin:script.pig, applicationId=application_1514593740388_0009, dagName=PigLatin:script.pig-0_scope-0, callerContext={ context=PIG, callerType=PIG_SCRIPT_ID, callerId=PIG-script.pig-bbbf889a-9da3-46e1-86cf-3f9ccb49387f }
+2017-12-30 00:43:54,382 [PigTezLauncher-0] INFO  org.apache.tez.dag.api.DAG - Inferring parallelism for vertex: scope-79 to be 2 from 1-1 connection with vertex scope-60
+2017-12-30 00:43:55,276 [PigTezLauncher-0] INFO  org.apache.tez.client.TezClient - Submitted dag to TezSession, sessionName=PigLatin:script.pig, applicationId=application_1514593740388_0009, dagName=PigLatin:script.pig-0_scope-0
+2017-12-30 00:43:55,501 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: http://sandbox.hortonworks.com:8188/ws/v1/timeline/
+2017-12-30 00:43:55,501 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at sandbox.hortonworks.com/172.17.0.2:8050
+2017-12-30 00:43:55,502 [PigTezLauncher-0] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at sandbox.hortonworks.com/172.17.0.2:10200
+2017-12-30 00:43:55,522 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - Submitted DAG PigLatin:script.pig-0_scope-0. Application id: application_1514593740388_0009
+2017-12-30 00:43:55,789 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher - HadoopJobId: job_1514593740388_0009
+2017-12-30 00:43:56,528 [Timer-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - DAG Status: status=RUNNING, progress=TotalTasks: 7 Succeeded: 0 Running: 0 Failed: 0 Killed: 0, diagnostics=, counters=null
+2017-12-30 00:44:10,847 [PigTezLauncher-0] INFO  org.apache.tez.common.counters.Limits - Counter limits initialized with parameters:  GROUP_NAME_MAX=256, MAX_GROUPS=3000, COUNTER_NAME_MAX=64, MAX_COUNTERS=10000
+2017-12-30 00:44:10,854 [PigTezLauncher-0] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezJob - DAG Status: status=SUCCEEDED, progress=TotalTasks: 7 Succeeded: 7 Running: 0 Failed: 0 Killed: 0 KilledTaskAttempts: 1, diagnostics=, counters=Counters: 289
+	org.apache.tez.common.counters.DAGCounter
+		NUM_KILLED_TASKS=1
+		NUM_SUCCEEDED_TASKS=7
+		TOTAL_LAUNCHED_TASKS=8
+		OTHER_LOCAL_TASKS=1
+		DATA_LOCAL_TASKS=2
+		AM_CPU_MILLISECONDS=4130
+		AM_GC_TIME_MILLIS=120
+	File System Counters
+		FILE_BYTES_READ=96411
+		FILE_BYTES_WRITTEN=73334
+		HDFS_BYTES_READ=2215517
+		HDFS_BYTES_WRITTEN=6741
+		HDFS_READ_OPS=5
+		HDFS_WRITE_OPS=2
+		HDFS_OP_CREATE=1
+		HDFS_OP_GET_FILE_STATUS=3
+		HDFS_OP_OPEN=2
+		HDFS_OP_RENAME=1
+	org.apache.tez.common.counters.TaskCounter
+		REDUCE_INPUT_GROUPS=3646
+		REDUCE_INPUT_RECORDS=3728
+		COMBINE_INPUT_RECORDS=0
+		SPILLED_RECORDS=7456
+		NUM_SHUFFLED_INPUTS=9
+		NUM_SKIPPED_INPUTS=0
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		MERGED_MAP_OUTPUTS=7
+		GC_TIME_MILLIS=383
+		CPU_MILLISECONDS=17710
+		PHYSICAL_MEMORY_BYTES=1672478720
+		VIRTUAL_MEMORY_BYTES=14040506368
+		COMMITTED_HEAP_BYTES=1672478720
+		INPUT_RECORDS_PROCESSED=101815
+		INPUT_SPLIT_LENGTH_BYTES=2215517
+		OUTPUT_RECORDS=102311
+		OUTPUT_LARGE_RECORDS=0
+		OUTPUT_BYTES=1381055
+		OUTPUT_BYTES_WITH_OVERHEAD=118465
+		OUTPUT_BYTES_PHYSICAL=73110
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILLS_BYTES_READ=67351
+		ADDITIONAL_SPILL_COUNT=0
+		SHUFFLE_CHUNK_COUNT=5
+		SHUFFLE_BYTES=73062
+		SHUFFLE_BYTES_DECOMPRESSED=118465
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_DISK_DIRECT=73062
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_DISK_TO_DISK_MERGES=0
+		SHUFFLE_PHASE_TIME=1192
+		MERGE_PHASE_TIME=336
+		FIRST_EVENT_RECEIVED=1057
+		LAST_EVENT_RECEIVED=1069
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Shuffle Errors_scope_58_INPUT_scope_57
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Shuffle Errors_scope_60_INPUT_scope_58
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Shuffle Errors_scope_60_INPUT_scope_59
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Shuffle Errors_scope_69_INPUT_scope_60
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Shuffle Errors_scope_81_INPUT_scope_79
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	TaskCounter_scope_57_INPUT_scope_0
+		INPUT_RECORDS_PROCESSED=100000
+		INPUT_SPLIT_LENGTH_BYTES=1979173
+	TaskCounter_scope_57_OUTPUT_scope_58
+		ADDITIONAL_SPILLS_BYTES_READ=0
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILL_COUNT=0
+		OUTPUT_BYTES=1293890
+		OUTPUT_BYTES_PHYSICAL=15174
+		OUTPUT_BYTES_WITH_OVERHEAD=27662
+		OUTPUT_RECORDS=100000
+		SHUFFLE_CHUNK_COUNT=1
+		SPILLED_RECORDS=1682
+	TaskCounter_scope_58_INPUT_scope_57
+		ADDITIONAL_SPILLS_BYTES_READ=15174
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		COMBINE_INPUT_RECORDS=0
+		FIRST_EVENT_RECEIVED=51
+		LAST_EVENT_RECEIVED=51
+		MERGED_MAP_OUTPUTS=1
+		MERGE_PHASE_TIME=95
+		NUM_DISK_TO_DISK_MERGES=0
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_SHUFFLED_INPUTS=1
+		NUM_SKIPPED_INPUTS=0
+		REDUCE_INPUT_GROUPS=1682
+		REDUCE_INPUT_RECORDS=1682
+		SHUFFLE_BYTES=15174
+		SHUFFLE_BYTES_DECOMPRESSED=27662
+		SHUFFLE_BYTES_DISK_DIRECT=15174
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_PHASE_TIME=74
+		SPILLED_RECORDS=1682
+	TaskCounter_scope_58_OUTPUT_scope_60
+		ADDITIONAL_SPILLS_BYTES_READ=0
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILL_COUNT=0
+		OUTPUT_BYTES=2376
+		OUTPUT_BYTES_PHYSICAL=1654
+		OUTPUT_BYTES_WITH_OVERHEAD=2652
+		OUTPUT_RECORDS=132
+		SHUFFLE_CHUNK_COUNT=1
+		SPILLED_RECORDS=132
+	TaskCounter_scope_59_INPUT_scope_29
+		INPUT_RECORDS_PROCESSED=1682
+		INPUT_SPLIT_LENGTH_BYTES=236344
+	TaskCounter_scope_59_OUTPUT_scope_60
+		ADDITIONAL_SPILLS_BYTES_READ=0
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILL_COUNT=0
+		OUTPUT_BYTES=68061
+		OUTPUT_BYTES_PHYSICAL=43909
+		OUTPUT_BYTES_WITH_OVERHEAD=71437
+		OUTPUT_RECORDS=1682
+		SHUFFLE_CHUNK_COUNT=1
+		SPILLED_RECORDS=1682
+	TaskCounter_scope_60_INPUT_scope_58
+		ADDITIONAL_SPILLS_BYTES_READ=1654
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		COMBINE_INPUT_RECORDS=0
+		FIRST_EVENT_RECEIVED=41
+		LAST_EVENT_RECEIVED=41
+		MERGED_MAP_OUTPUTS=2
+		MERGE_PHASE_TIME=86
+		NUM_DISK_TO_DISK_MERGES=0
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_SHUFFLED_INPUTS=2
+		NUM_SKIPPED_INPUTS=0
+		REDUCE_INPUT_GROUPS=132
+		REDUCE_INPUT_RECORDS=132
+		SHUFFLE_BYTES=1654
+		SHUFFLE_BYTES_DECOMPRESSED=2652
+		SHUFFLE_BYTES_DISK_DIRECT=1654
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_PHASE_TIME=55
+		SPILLED_RECORDS=132
+	TaskCounter_scope_60_INPUT_scope_59
+		ADDITIONAL_SPILLS_BYTES_READ=43909
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		COMBINE_INPUT_RECORDS=0
+		FIRST_EVENT_RECEIVED=29
+		LAST_EVENT_RECEIVED=41
+		MERGED_MAP_OUTPUTS=2
+		MERGE_PHASE_TIME=95
+		NUM_DISK_TO_DISK_MERGES=0
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_SHUFFLED_INPUTS=2
+		NUM_SKIPPED_INPUTS=0
+		REDUCE_INPUT_GROUPS=1682
+		REDUCE_INPUT_RECORDS=1682
+		SHUFFLE_BYTES=43909
+		SHUFFLE_BYTES_DECOMPRESSED=71437
+		SHUFFLE_BYTES_DISK_DIRECT=43909
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_PHASE_TIME=63
+		SPILLED_RECORDS=1682
+	TaskCounter_scope_60_OUTPUT_scope_69
+		ADDITIONAL_SPILLS_BYTES_READ=0
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILL_COUNT=0
+		OUTPUT_BYTES=2102
+		OUTPUT_BYTES_PHYSICAL=1022
+		OUTPUT_BYTES_WITH_OVERHEAD=2032
+		OUTPUT_RECORDS=100
+		SHUFFLE_CHUNK_COUNT=1
+		SPILLED_RECORDS=100
+	TaskCounter_scope_60_OUTPUT_scope_79
+		ADDITIONAL_SPILLS_BYTES_READ=0
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILL_COUNT=0
+		OUTPUT_BYTES=7269
+		OUTPUT_BYTES_PHYSICAL=5624
+		OUTPUT_BYTES_WITH_OVERHEAD=7539
+		OUTPUT_LARGE_RECORDS=0
+		OUTPUT_RECORDS=132
+		SPILLED_RECORDS=0
+	TaskCounter_scope_69_INPUT_scope_60
+		ADDITIONAL_SPILLS_BYTES_READ=1022
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		COMBINE_INPUT_RECORDS=0
+		FIRST_EVENT_RECEIVED=7
+		LAST_EVENT_RECEIVED=7
+		MERGED_MAP_OUTPUTS=1
+		MERGE_PHASE_TIME=18
+		NUM_DISK_TO_DISK_MERGES=0
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_SHUFFLED_INPUTS=1
+		NUM_SKIPPED_INPUTS=0
+		REDUCE_INPUT_GROUPS=68
+		REDUCE_INPUT_RECORDS=100
+		SHUFFLE_BYTES=1022
+		SHUFFLE_BYTES_DECOMPRESSED=2032
+		SHUFFLE_BYTES_DISK_DIRECT=1022
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_PHASE_TIME=15
+		SPILLED_RECORDS=100
+	TaskCounter_scope_69_OUTPUT_scope_79
+		ADDITIONAL_SPILLS_BYTES_READ=0
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILL_COUNT=0
+		OUTPUT_BYTES=88
+		OUTPUT_BYTES_PHYSICAL=135
+		OUTPUT_BYTES_WITH_OVERHEAD=96
+		OUTPUT_LARGE_RECORDS=0
+		OUTPUT_RECORDS=1
+		SPILLED_RECORDS=0
+	TaskCounter_scope_79_INPUT_scope_60
+		FIRST_EVENT_RECEIVED=456
+		INPUT_RECORDS_PROCESSED=132
+		LAST_EVENT_RECEIVED=456
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		NUM_SHUFFLED_INPUTS=1
+		SHUFFLE_BYTES=5600
+		SHUFFLE_BYTES_DECOMPRESSED=7539
+		SHUFFLE_BYTES_DISK_DIRECT=5600
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_PHASE_TIME=480
+	TaskCounter_scope_79_INPUT_scope_69
+		FIRST_EVENT_RECEIVED=456
+		INPUT_RECORDS_PROCESSED=1
+		LAST_EVENT_RECEIVED=456
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		NUM_SHUFFLED_INPUTS=1
+		SHUFFLE_BYTES=111
+		SHUFFLE_BYTES_DECOMPRESSED=96
+		SHUFFLE_BYTES_DISK_DIRECT=111
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_PHASE_TIME=476
+	TaskCounter_scope_79_OUTPUT_scope_81
+		ADDITIONAL_SPILLS_BYTES_READ=0
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		ADDITIONAL_SPILL_COUNT=0
+		OUTPUT_BYTES=7269
+		OUTPUT_BYTES_PHYSICAL=5592
+		OUTPUT_BYTES_WITH_OVERHEAD=7047
+		OUTPUT_RECORDS=132
+		SHUFFLE_CHUNK_COUNT=1
+		SPILLED_RECORDS=132
+	TaskCounter_scope_81_INPUT_scope_79
+		ADDITIONAL_SPILLS_BYTES_READ=5592
+		ADDITIONAL_SPILLS_BYTES_WRITTEN=0
+		COMBINE_INPUT_RECORDS=0
+		FIRST_EVENT_RECEIVED=17
+		LAST_EVENT_RECEIVED=17
+		MERGED_MAP_OUTPUTS=1
+		MERGE_PHASE_TIME=42
+		NUM_DISK_TO_DISK_MERGES=0
+		NUM_FAILED_SHUFFLE_INPUTS=0
+		NUM_MEM_TO_DISK_MERGES=0
+		NUM_SHUFFLED_INPUTS=1
+		NUM_SKIPPED_INPUTS=0
+		REDUCE_INPUT_GROUPS=82
+		REDUCE_INPUT_RECORDS=132
+		SHUFFLE_BYTES=5592
+		SHUFFLE_BYTES_DECOMPRESSED=7047
+		SHUFFLE_BYTES_DISK_DIRECT=5592
+		SHUFFLE_BYTES_TO_DISK=0
+		SHUFFLE_BYTES_TO_MEM=0
+		SHUFFLE_PHASE_TIME=29
+		SPILLED_RECORDS=132
+	TaskCounter_scope_81_OUTPUT_scope_56
+		OUTPUT_RECORDS=132
+	org.apache.hadoop.mapreduce.TaskCounter
+		COMBINE_INPUT_RECORDS=1682
+		COMBINE_OUTPUT_RECORDS=100000
+	org.apache.hadoop.mapreduce.TaskCounter_scope_57_OUTPUT_scope_58
+		COMBINE_INPUT_RECORDS=1682
+		COMBINE_OUTPUT_RECORDS=100000
+	org.apache.hadoop.mapreduce.TaskCounter_scope_58_INPUT_scope_57
+		COMBINE_INPUT_RECORDS=0
+		COMBINE_OUTPUT_RECORDS=0
+2017-12-30 00:44:11,815 [main] INFO  org.apache.pig.tools.pigstats.tez.TezPigScriptStats - Script Statistics:
+
+       HadoopVersion: 2.7.3.2.5.0.0-1245                                                                                  
+          PigVersion: 0.16.0.2.5.0.0-1245                                                                                 
+          TezVersion: 0.7.0.2.5.0.0-1245                                                                                  
+              UserId: yarn                                                                                                
+            FileName: script.pig                                                                                          
+           StartedAt: 2017-12-30 00:43:45                                                                                 
+          FinishedAt: 2017-12-30 00:44:11                                                                                 
+            Features: HASH_JOIN,GROUP_BY,ORDER_BY,FILTER                                                                  
+
+Success!
+
+
+DAG 0:
+                                    Name: PigLatin:script.pig-0_scope-0                                                                       
+                           ApplicationId: job_1514593740388_0009                                                                              
+                      TotalLaunchedTasks: 8                                                                                                   
+                           FileBytesRead: 96411                                                                                               
+                        FileBytesWritten: 73334                                                                                               
+                           HdfsBytesRead: 2215517                                                                                             
+                        HdfsBytesWritten: 6741                                                                                                
+      SpillableMemoryManager spill count: 0                                                                                                   
+                Bags proactively spilled: 0                                                                                                   
+             Records proactively spilled: 0                                                                                                   
+
+DAG Plan:
+Tez vertex scope-57	->	Tez vertex scope-58,
+Tez vertex scope-58	->	Tez vertex scope-60,
+Tez vertex scope-59	->	Tez vertex scope-60,
+Tez vertex scope-60	->	Tez vertex scope-69,Tez vertex scope-79,
+Tez vertex scope-69	->	Tez vertex scope-79,
+Tez vertex scope-79	->	Tez vertex scope-81,
+Tez vertex scope-81
+
+Vertex Stats:
+VertexId Parallelism TotalTasks   InputRecords   ReduceInputRecords  OutputRecords  FileBytesRead FileBytesWritten  HdfsBytesRead HdfsBytesWritten Alias	Feature	Outputs
+scope-57           1          1         100000                    0         100000             32            15206        1979173                0 avgRatings,ratings,ratingsByMovie		
+scope-58           1          1              0                 1682            132          15262             1710              0                0 avgRatings,fiveStarMovies,fiveStarsWithData	GROUP_BY	
+scope-59           1          1           1682                    0           1682             56            43965         236344                0 fiveStarsWithData,metadata,nameLookup		
+scope-60           2          1              0                 1814            232          68576             6686              0                0 fiveStarsWithData,oldestFiveStarMovies	HASH_JOIN,SAMPLER	
+scope-69           1          1              0                  100              1           1054              143              0                0 		
+scope-79           2          1            133                    0            132           5807             5624              0                0 oldestFiveStarMovies		
+scope-81          -1          1              0                  132            132           5624                0              0             6741 	ORDER_BY	hdfs://sandbox.hortonworks.com:8020/tmp/temp-1535411271/tmp1449575909,
+
+Input(s):
+Successfully read 100000 records (1979173 bytes) from: "/user/maria_dev/ml-100k/u.data"
+Successfully read 1682 records (236344 bytes) from: "/user/maria_dev/ml-100k/u.item"
+
+Output(s):
+Successfully stored 132 records (6741 bytes) in: "hdfs://sandbox.hortonworks.com:8020/tmp/temp-1535411271/tmp1449575909"
+
+2017-12-30 00:44:11,847 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input paths to process : 1
+2017-12-30 00:44:11,847 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2017-12-30 00:44:12,037 [main] INFO  org.apache.pig.Main - Pig script completed in 29 seconds and 999 milliseconds (29999 ms)
+2017-12-30 00:44:12,045 [main] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezLauncher - Shutting down thread pool
+2017-12-30 00:44:12,076 [pool-1-thread-1] INFO  org.apache.pig.backend.hadoop.executionengine.tez.TezSessionManager - Shutting down Tez session org.apache.tez.client.TezClient@5bf7557
+2017-12-30 00:44:12,098 [pool-1-thread-1] INFO  org.apache.tez.client.TezClient - Shutting down Tez Session, sessionName=PigLatin:script.pig, applicationId=application_1514593740388_0009
